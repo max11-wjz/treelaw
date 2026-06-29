@@ -1,0 +1,45 @@
+name: 问题反馈
+description: 反馈 TreeLaw 的错误、引用问题或产品体验问题
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请不要在公开 Issue 中提交客户姓名、案号、身份证号、合同正文、商业秘密或其他敏感信息。
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题描述
+      placeholder: 请说明你看到的问题，以及期望结果。
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: 问题类型
+      options:
+        - 法条引用不准确
+        - 案例引用不准确
+        - 检索结果不完整
+        - 合同审查结果不符合预期
+        - 文书生成格式问题
+        - OCR 或附件读取问题
+        - 前端体验问题
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: 用脱敏方式描述你做了什么。
+    validations:
+      required: false
+  - type: textarea
+    id: expected
+    attributes:
+      label: 你认为正确结果应该是什么
+      placeholder: 如涉及法律依据，请尽量提供公开来源链接。
+    validations:
+      required: false
