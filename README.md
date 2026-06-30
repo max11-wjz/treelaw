@@ -8,13 +8,13 @@ A curated library of 212 hand-crafted, lawyer-verified legal agent skills for Ch
 [技能总览](#skill-index) · [设计理念](#自主编排的法律智能体) · [评测覆盖](#真实律师工作流打磨) · [使用方式](https://treelaw.top) · [贡献技能](https://treelaw.top)
 
 <p align="center">
-  <a href="https://treelaw.top">
-    <img src="assets/skill-index/button-start-using.png" alt="开始使用 TreeLaw" width="520">
-  </a>
+  <img src="assets/treelaw-hero.png" alt="TreeLaw 法律 AI 智能体" width="100%">
 </p>
 
 <p align="center">
-  <img src="assets/treelaw-hero.png" alt="TreeLaw 法律 AI 智能体" width="100%">
+  <a href="https://treelaw.top">
+    <img src="assets/skill-index/button-start-using.png" alt="开始使用 TreeLaw" width="520">
+  </a>
 </p>
 
 TreeLaw 不是一个泛用聊天机器人。它是面向中国法律实务构建的法律 Agent，把诉讼律师、非诉律师、常年法律顾问和企业合规团队的工作流，拆成可执行、可核验、可交付的专业技能。
