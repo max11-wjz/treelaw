@@ -4,72 +4,230 @@
   <img src="assets/treelaw-hero.png" alt="TreeLaw 法律 AI 智能体" width="100%">
 </p>
 
-**7 年以上职业律师水平的中国法律智能体。**<br>
+**7 年以上执业律师水平的中国法律智能体。**<br>
 更适合中国法律体系，也更适合中国律师真实工作方式。
 
-TreeLaw 不是一个泛用聊天机器人。它是面向中国法律实务构建的法律 Agent，把诉讼律师、非诉律师、常年法律顾问和企业合规团队的工作流，拆成可执行、可校验、可交付的专业技能。
+TreeLaw 不是一个泛用聊天机器人。它是面向中国法律实务构建的法律 Agent，把诉讼律师、非诉律师、常年法律顾问和企业合规团队的工作流，拆成可执行、可核验、可交付的专业技能。
 
-[访问官网](https://treelaw.top) · [申请内测](https://treelaw.top) · [提交工作流建议](../../issues/new/choose)
+[访问官网](https://treelaw.top) · [申请内测](../../issues/new?template=beta_request.yml) · [提交法律工作流](../../issues/new?template=workflow_request.yml)
 
-## What Makes TreeLaw Different
+## Skill Index
 
-通用 AI 往往会给出“看起来像法律意见”的回答，但律师真正需要的是：事实能定位，证据能对应，法条和案例能核验，最终能落到检索报告、合同审查意见、起诉状、法律意见书和证据目录上。
+TreeLaw 的核心不是“回答法律问题”，而是把中国律师真实工作中的判断、检索、核验、起草、复核和交付拆成可编排的技能。
 
-TreeLaw 的目标是让中国律师少做重复劳动，把注意力放回判断、策略和客户沟通。
+下面是当前公开展示的一部分动态法律工作流。每个 workflow 都可以在 TreeLaw Agent 中被组合、调用，并与文件读取、OCR、法律检索、文书生成和人工确认环节衔接。
 
-<p align="center">
-  <img src="assets/treelaw-positioning.png" alt="TreeLaw 竞争定位" width="100%">
+<p>
+  <img src="assets/skill-index/section-01.png" alt="法律检索与依据核验" width="560">
 </p>
 
-## Core Workflows
+> **理论依据** IRAC 争点分析、请求权基础检索、类案检索、法条体系解释、裁判规则归纳、法律依据可追溯核验。
 
-### 单案完整法律检索
+<p><img src="assets/skill-index/skill-case-issue-decomposition.png" alt="case-issue-decomposition"></p>
 
-面向一个具体案件，TreeLaw 可以从争议焦点开始拆解检索路径，而不是只返回一组关键词结果。
+把案件事实拆成可检索的争点、要件和抗辩路径。
 
-- 争点拆解：把事实争议、法律争议、程序争议拆成可检索问题。
-- 法律依据检索：优先围绕中国法律法规、司法解释、指导案例、法院会议纪要和裁判规则组织依据。
-- 已知案例核验：根据案号、法院、当事人、裁判要旨核验案例是否真实匹配。
-- 有利案例检索：围绕同案由、同争点、同法院层级或同地区裁判倾向寻找可引用案例。
-- 不利材料整理：主动列出对己方不利的案例、观点和可能抗辩。
-- 裁判观点提炼：把检索结果转化为可直接进入代理意见、起诉状、答辩状或法律意见书的论证。
+<p><img src="assets/skill-index/skill-statute-authority-verification.png" alt="statute-authority-verification"></p>
 
-### 合同审查
+围绕国家法律法规、司法解释、部门规章和裁判规则核验依据。
 
-TreeLaw 的合同审查不是只标红风险句子，而是按律师审查习惯重建交易。
+<p><img src="assets/skill-index/skill-known-case-number-check.png" alt="known-case-number-check"></p>
 
-- 识别交易结构、合同性质、主体资格、授权链条和履约路径。
-- 审查付款、交付、验收、违约责任、解除、担保、管辖、争议解决等核心条款。
-- 对缺失条款、冲突条款、表述不确定条款给出修订建议。
-- 按客户立场输出风险等级、修改意见、谈判口径和可替换条款。
+根据案号、法院、当事人和裁判要旨核验已知案例。
 
-### 批量诉讼与材料生产
+<p><img src="assets/skill-index/skill-favorable-case-retrieval.png" alt="favorable-case-retrieval"></p>
 
-TreeLaw 支持从扫描件、台账、还款明细、合同附件到诉讼材料的批量处理。
+寻找同争点、同法院层级或同地区裁判倾向下的有利案例。
 
-- OCR 识别扫描件并生成可视化对照页。
-- 提取标准台账字段，交由实习生或律师人工核验。
-- 根据确认台账自动生成起诉状、授权委托书、合同条件表、证据目录等材料。
-- 对关键金额、主体信息、合同编号、日期、还款记录和 OCR 来源保留可追溯线索。
+<p><img src="assets/skill-index/skill-adverse-authority-mapping.png" alt="adverse-authority-mapping"></p>
 
-### 常法、非诉与企业自查
+主动整理不利观点、不利案例和对方可能引用的材料。
 
-TreeLaw 也在适配更多企业日常法律场景，包括制度审查、合规检查、劳动用工、数据合规、公司治理、投融资文件和长期顾问问答。
+<p><img src="assets/skill-index/skill-citation-source-audit.png" alt="citation-source-audit"></p>
 
-## Source-Backed Legal Reasoning
+对输出中的法条、案例和政策依据做可追溯核查。
 
-TreeLaw 的一个核心原则是：法律结论要尽量回到可核验的来源。
+<p>
+  <img src="assets/skill-index/section-02.png" alt="事实证据与材料处理" width="560">
+</p>
 
-- 法条：围绕国家法律法规数据库、司法解释、部门规章、地方规范性文件等信源建立检索和核验路径。
-- 案例：围绕裁判文书、指导案例、法院案例库、专业数据库和真实案号做核验。
-- 政策与裁判规则：适配法院会议纪要、审判指引、类案规则和行业监管文件。
-- 输出：尽量标明依据来源、适用条件、风险边界和需要人工复核的地方。
+> **理论依据** 证据三性、证明责任分配、事实要件映射、材料索引、OCR 来源追踪、矛盾事实比对。
+
+<p><img src="assets/skill-index/skill-fact-evidence-indexing.png" alt="fact-evidence-indexing"></p>
+
+把事实、证据、证明目的和页码来源整理成可复核目录。
+
+<p><img src="assets/skill-index/skill-ocr-source-tracing.png" alt="ocr-source-tracing"></p>
+
+扫描件 OCR 后保留原文、页码和字段来源，便于人工确认。
+
+<p><img src="assets/skill-index/skill-evidence-chain-mapping.png" alt="evidence-chain-mapping"></p>
+
+按法律要件建立证据链，识别证明缺口和补强方向。
+
+<p><img src="assets/skill-index/skill-contradiction-spotting.png" alt="contradiction-spotting"></p>
+
+比对合同、流水、聊天记录和陈述中的冲突信息。
+
+<p><img src="assets/skill-index/skill-pleading-fact-extraction.png" alt="pleading-fact-extraction"></p>
+
+从材料中抽取起诉状、答辩状和法律意见书所需事实。
+
+<p>
+  <img src="assets/skill-index/section-03.png" alt="诉讼策略与文书生成" width="560">
+</p>
+
+> **理论依据** 请求权基础、诉讼请求设计、举证责任、程序节点、庭审争点整理、救济路径规划。
+
+<p><img src="assets/skill-index/skill-litigation-strategy-map.png" alt="litigation-strategy-map"></p>
+
+从请求权基础、举证责任、程序节点和诉讼目标生成策略图。
+
+<p><img src="assets/skill-index/skill-complaint-drafting.png" alt="complaint-drafting"></p>
+
+根据案件台账和证据结构生成民事起诉状。
+
+<p><img src="assets/skill-index/skill-defense-and-counterclaim.png" alt="defense-and-counterclaim"></p>
+
+组织答辩意见、反诉路径和抗辩要点。
+
+<p><img src="assets/skill-index/skill-preservation-application.png" alt="preservation-application"></p>
+
+生成财产保全、证据保全和行为保全申请材料。
+
+<p><img src="assets/skill-index/skill-hearing-outline-generation.png" alt="hearing-outline-generation"></p>
+
+整理庭审提纲、发问清单、质证意见和争点回应。
+
+<p><img src="assets/skill-index/skill-judgment-remedy-planning.png" alt="judgment-remedy-planning"></p>
+
+评估上诉、再审、执行和和解路径。
+
+<p>
+  <img src="assets/skill-index/section-04.png" alt="合同审查与交易文件" width="560">
+</p>
+
+> **理论依据** 交易结构还原、合同目的解释、权利义务配置、违约责任设计、风险分配、商业谈判可执行性。
+
+<p><img src="assets/skill-index/skill-transaction-structure-analysis.png" alt="transaction-structure-analysis"></p>
+
+先识别交易结构、主体关系和履约路径，再审条款。
+
+<p><img src="assets/skill-index/skill-contract-risk-review.png" alt="contract-risk-review"></p>
+
+按客户立场审查付款、交付、验收、违约、解除和争议解决。
+
+<p><img src="assets/skill-index/skill-redline-clause-suggestion.png" alt="redline-clause-suggestion"></p>
+
+给出可替换条款、红线修改意见和谈判口径。
+
+<p><img src="assets/skill-index/skill-missing-clause-check.png" alt="missing-clause-check"></p>
+
+识别缺失条款、冲突条款和表述不确定条款。
+
+<p><img src="assets/skill-index/skill-counterparty-risk-screen.png" alt="counterparty-risk-screen"></p>
+
+围绕主体资格、授权链条、履约能力和监管风险做初筛。
+
+<p><img src="assets/skill-index/skill-negotiation-playbook.png" alt="negotiation-playbook"></p>
+
+把审查意见转化为可执行的谈判优先级。
+
+<p>
+  <img src="assets/skill-index/section-05.png" alt="批量诉讼与金融案件" width="560">
+</p>
+
+> **理论依据** 标准化台账、OCR 人工确认、金融借款/担保/还款事实核验、模板化文书生成、批量质量控制。
+
+<p><img src="assets/skill-index/skill-batch-litigation-intake.png" alt="batch-litigation-intake"></p>
+
+从合同、扫描件、流水和还款记录中批量生成标准台账。
+
+<p><img src="assets/skill-index/skill-ledger-human-review.png" alt="ledger-human-review"></p>
+
+生成可视化核验页，让实习生或律师确认关键字段。
+
+<p><img src="assets/skill-index/skill-repayment-interest-check.png" alt="repayment-interest-check"></p>
+
+核对本金、利息、罚息、逾期金额和律师费。
+
+<p><img src="assets/skill-index/skill-template-document-filling.png" alt="template-document-filling"></p>
+
+把确认台账填入起诉状、委托书、条件表和证据目录模板。
+
+<p><img src="assets/skill-index/skill-evidence-binder-production.png" alt="evidence-binder-production"></p>
+
+批量生成证据目录、附件清单和可追溯材料包。
+
+<p><img src="assets/skill-index/skill-batch-output-qc.png" alt="batch-output-qc"></p>
+
+检查主体、金额、日期、案由和模板字段是否一致。
+
+<p>
+  <img src="assets/skill-index/section-06.png" alt="常年法律顾问与企业合规" width="560">
+</p>
+
+> **理论依据** 企业法律问题分诊、制度治理、授权链条、劳动用工、数据合规、公司治理和业务风险闭环。
+
+<p><img src="assets/skill-index/skill-general-counsel-triage.png" alt="general-counsel-triage"></p>
+
+把日常法律问题分流到合同、劳动、公司治理、合规或诉讼路径。
+
+<p><img src="assets/skill-index/skill-compliance-gap-assessment.png" alt="compliance-gap-assessment"></p>
+
+围绕业务流程识别制度、授权、数据、用工和监管缺口。
+
+<p><img src="assets/skill-index/skill-policy-drafting.png" alt="policy-drafting"></p>
+
+生成制度、流程、通知、函件和内部合规文件初稿。
+
+<p><img src="assets/skill-index/skill-labor-and-data-compliance.png" alt="labor-and-data-compliance"></p>
+
+处理劳动用工、个人信息保护和数据出境相关问题。
+
+<p><img src="assets/skill-index/skill-company-governance-check.png" alt="company-governance-check"></p>
+
+核查股东会、董事会、授权、印章和内部审批规则。
+
+<p><img src="assets/skill-index/skill-board-resolution-review.png" alt="board-resolution-review"></p>
+
+审查或生成决议、会议纪要和授权文件。
+
+<p>
+  <img src="assets/skill-index/section-07.png" alt="法律意见书与专题研究" width="560">
+</p>
+
+> **理论依据** 法律意见书结构、事实与问题分离、依据检索、风险矩阵、管理层决策表达。
+
+<p><img src="assets/skill-index/skill-legal-opinion-drafting.png" alt="legal-opinion-drafting"></p>
+
+按事实、问题、依据、分析、结论和风险边界生成法律意见书。
+
+<p><img src="assets/skill-index/skill-regulatory-research.png" alt="regulatory-research"></p>
+
+围绕行业监管、地方规则和最新政策生成专题研究。
+
+<p><img src="assets/skill-index/skill-risk-matrix-generation.png" alt="risk-matrix-generation"></p>
+
+把法律风险转化为概率、影响、依据和整改动作矩阵。
+
+<p><img src="assets/skill-index/skill-source-backed-memo.png" alt="source-backed-memo"></p>
+
+输出带来源、适用条件和人工复核提示的研究备忘录。
+
+<p><img src="assets/skill-index/skill-executive-briefing.png" alt="executive-briefing"></p>
+
+把复杂法律分析压缩成管理层可读的决策简报。
+
+## 自主编排的法律智能体
+
+TreeLaw 通过技能路由、工具调用、文件读取、OCR、法律检索、引用核验和文书生成，把一个开放式法律任务拆成多个可复核步骤。它强调的是“律师能接着用的结果”，而不是单轮问答。
 
 <p align="center">
   <img src="assets/treelaw-agent-workflow.png" alt="TreeLaw 法律智能体核心技术流程" width="100%">
 </p>
 
-## Built With Lawyers
+## 真实律师工作流打磨
 
 TreeLaw 的技能体系来自真实法律工作，而不是只把法律文本塞进模型。
 
@@ -84,42 +242,23 @@ TreeLaw 的技能体系来自真实法律工作，而不是只把法律文本塞
   <img src="assets/treelaw-market-trust.png" alt="TreeLaw 市场真实反馈" width="100%">
 </p>
 
-## Product Philosophy
+## 参与测试 / 提交技能
 
-TreeLaw 关注的是“可交付结果”，而不只是模型回答。
+如果你对中国法律 AI 感兴趣，或者希望 TreeLaw 支持你的真实法律工作流，可以直接提交 Issue。请只提交脱敏后的工作流描述，不要在公开仓库中粘贴客户姓名、合同正文、身份证号、案号、手机号、商业秘密或其他敏感信息。
 
-- 对律师：减少检索、摘录、比对、格式化和重复起草时间。
-- 对团队：把资深律师经验沉淀成可复用的工作流。
-- 对客户：让法律服务更快、更透明，也更容易解释。
-- 对开发者：把法律信源、技能路由、工具调用、材料生成和人工确认做成可持续演进的系统。
-
-<p align="center">
-  <img src="assets/treelaw-saas-engine.png" alt="TreeLaw 业务飞轮" width="100%">
+<p>
+  <a href="../../issues/new?template=workflow_request.yml">
+    <img src="assets/skill-index/button-submit-workflow.png" alt="提交法律工作流" width="360">
+  </a>
+  <a href="../../issues/new?template=beta_request.yml">
+    <img src="assets/skill-index/button-join-beta.png" alt="申请参与内测" width="360">
+  </a>
 </p>
 
-## For Builders And Researchers
-
-我们欢迎对中国法律 AI 感兴趣的律师、法学院学生、研究者、工程师和机构参与测试。
-
-你可以在 Issues 中提交：
-
-- 你希望 TreeLaw 支持的法律工作流。
-- 你遇到的法律 Agent 错误、幻觉或引用不准确问题。
-- 你希望我们优先适配的法律信源、数据库或法院规则。
-- 你愿意参与内测的场景和联系方式。
-
-请不要在公开 Issue 中提交客户姓名、合同正文、身份证号、案号、手机号、商业秘密或其他敏感信息。真实材料请通过官网或私有沟通渠道提交。
+官网：[https://treelaw.top](https://treelaw.top)
 
 ## English Summary
 
-TreeLaw is a China-focused legal AI agent designed around real lawyer workflows. It targets lawyer-level legal research, contract review, litigation drafting, batch litigation document generation, source-backed citation verification, and human-in-the-loop review for Chinese legal practice.
+TreeLaw is a China-focused legal AI agent designed around real lawyer workflows. It targets lawyer-level legal research, citation verification, contract review, litigation drafting, batch litigation document generation, source-backed legal reasoning, and human-in-the-loop review for Chinese legal practice.
 
 Website: [https://treelaw.top](https://treelaw.top)
-
-## Join The Beta
-
-<p align="center">
-  <img src="assets/treelaw-cta.png" alt="加入 TreeLaw 内测" width="100%">
-</p>
-
-If you are a lawyer, legal researcher, legal-tech builder, law student, or institution interested in Chinese legal AI, visit [treelaw.top](https://treelaw.top) or open an Issue in this repository.
