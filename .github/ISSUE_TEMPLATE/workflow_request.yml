@@ -1,0 +1,52 @@
+name: 法律工作流建议
+description: 提交你希望 TreeLaw 支持的法律任务或专业技能
+title: "[Workflow] "
+labels: ["workflow-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请描述抽象工作流，不要上传或粘贴真实案件、客户、合同或个人敏感信息。
+  - type: input
+    id: workflow_name
+    attributes:
+      label: 工作流名称
+      placeholder: 已知案号的类案核验
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 工作流类型
+      options:
+        - 诉讼
+        - 合同
+        - 非诉
+        - 常年法律顾问
+        - 合规
+        - 检索与核验
+        - 文书生成
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: 通常输入什么
+      placeholder: 例如案情摘要、合同、证据目录、案号、裁判观点、企业制度等。
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: 希望输出什么
+      placeholder: 例如检索报告、风险清单、修改稿、起诉状、证据目录、法律意见书等。
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: 需要核验哪些依据或信源
+      placeholder: 例如国家法律法规数据库、裁判文书、指导案例、法院指引、行业监管文件等。
+    validations:
+      required: false

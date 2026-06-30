@@ -1,0 +1,54 @@
+name: 申请内测
+description: 申请加入 TreeLaw 内测或留下合作线索
+title: "[Beta] "
+labels: ["beta-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请不要在公开 Issue 中提交客户姓名、案号、身份证号、合同正文、商业秘密或其他敏感信息。
+  - type: input
+    id: role
+    attributes:
+      label: 你的角色
+      description: 例如律师、法务、法学院学生、研究者、工程师、律所管理者
+      placeholder: 律师
+    validations:
+      required: true
+  - type: input
+    id: city
+    attributes:
+      label: 所在城市
+      placeholder: 北京
+    validations:
+      required: false
+  - type: dropdown
+    id: practice_area
+    attributes:
+      label: 主要使用场景
+      options:
+        - 诉讼检索
+        - 合同审查
+        - 批量诉讼
+        - 法律意见书
+        - 常年法律顾问
+        - 企业合规
+        - 法律研究
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: expectation
+    attributes:
+      label: 你希望 TreeLaw 帮你解决什么问题
+      placeholder: 请描述工作流，不要粘贴真实客户材料。
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: 联系方式
+      description: 可填写邮箱、微信号或说明希望通过官网联系。
+      placeholder: email@example.com
+    validations:
+      required: false
