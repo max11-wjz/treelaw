@@ -17,9 +17,13 @@ TreeLaw 不是一个泛用聊天机器人。它是面向中国法律实务构建
 
 ## Skill Index
 
-TreeLaw 的核心不是“回答法律问题”，而是把中国律师真实工作中的判断、检索、核验、起草、复核和交付拆成可编排的技能。
+TreeLaw 的核心不是“回答法律问题”，而是把中国律师真实工作中的判断、检索、核验、起草、复核和交付拆成可编排的 Skills。
 
-下面是当前公开展示的一部分动态法律工作流。每个 workflow 都可以在 TreeLaw Agent 中被组合、调用，并与文件读取、OCR、法律检索、文书生成和人工确认环节衔接。
+下面是当前公开展示的一部分 TreeLaw Skills。每个 Skill 都可以在 TreeLaw Agent 中被组合、调用，并与文件读取、OCR、法律检索、文书生成和人工确认环节衔接。
+
+<p align="center">
+  <img src="assets/skill-index/skills-distribution-pie.png" alt="TreeLaw Skills 分布饼图" width="100%">
+</p>
 
 <p>
   <img src="assets/skill-index/section-01.png" alt="法律检索与依据核验" width="560">
