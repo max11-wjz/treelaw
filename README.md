@@ -1,15 +1,15 @@
 # TreeLaw
 
+<p align="center">
+  <img src="assets/treelaw-readme-header.png" alt="TreeLaw 中国法律智能体技能库" width="100%">
+</p>
+
 **7 年以上执业律师水平的中国法律智能体。**<br>
 212 个由执业法律专业人员手写并验证的法律智能体技能（Agent Skills），覆盖诉讼律师、非诉律师、常年法律顾问和企业合规团队，贯穿检索 → 推理 → 论证 → 文书 → 交付的完整链条。
 
 A curated library of 212 hand-crafted, lawyer-verified legal agent skills for Chinese legal practice, covering litigation lawyers, transactional lawyers, general counsel, and corporate compliance teams.
 
 [技能总览](#skill-index) · [设计理念](#自主编排的法律智能体) · [评测覆盖](#真实律师工作流打磨) · [使用方式](https://treelaw.top) · [贡献技能](https://treelaw.top)
-
-<p align="center">
-  <img src="assets/treelaw-hero.png" alt="TreeLaw 法律 AI 智能体" width="100%">
-</p>
 
 <p align="center">
   <a href="https://treelaw.top">
