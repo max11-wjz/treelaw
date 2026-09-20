@@ -85,7 +85,7 @@ TreeLaw 的核心不是“回答法律问题”，而是把中国律师真实工
 
 <p><a href="https://treelaw.top"><img src="assets/skill-index/skill-pleading-fact-extraction.png" alt="pleading-fact-extraction"></a></p>
 
-从材料中抽取起诉状、答辩状和法律意见书所需事实。
+从众多材料中抽取起诉状、答辩状和法律意见书所需事实。
 
 <p>
   <img src="assets/skill-index/section-03.png" alt="诉讼策略与文书生成" width="560">
